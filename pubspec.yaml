@@ -1,0 +1,132 @@
+# name: greenbasket_plus
+# description: GreenBasket+ - Preventive Health & Lifestyle Companion
+# publish_to: 'none'
+# version: 1.0.0+1
+
+# environment:
+#   sdk: '>=3.0.0 <4.0.0'
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
+
+#   # State management
+#   provider: ^6.1.1
+
+#   # Local storage
+#   shared_preferences: ^2.2.2
+
+#   # Utilities
+#   intl: ^0.18.1
+#   uuid: ^4.3.3
+
+#   # Charts & progress indicators
+#   fl_chart: ^0.66.2
+#   percent_indicator: ^4.2.3
+
+#   # Fonts & icons
+#   google_fonts: ^6.1.0
+#   cupertino_icons: ^1.0.2
+
+#   # Animations
+#   animate_do: ^3.3.4
+
+
+#   http: ^1.2.1        # ← ADD THIS LINE
+#   # ... rest of your dependencies
+
+#   # NOTE: flutter_local_notifications removed from frontend-only build.
+#   # Re-add when backend is integrated:
+#   #   flutter_local_notifications: ^17.0.0
+#   # If you do add it back, also apply the fixes in android/app/build.gradle.kts:
+#   #   ndkVersion = "27.0.12077973"
+#   #   isCoreLibraryDesugaringEnabled = true
+#   #   coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
+#   flutter_lints: ^3.0.0
+
+# flutter:
+#   uses-material-design: true
+#   assets:
+#     - assets/images/
+#     - assets/icons/
+
+
+
+
+  
+
+name: greenbasket_plus
+description: GreenBasket+ - Preventive Health & Lifestyle Companion
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  speech_to_text: ^6.6.0
+  flutter_tts: ^4.0.2
+  permission_handler: ^11.3.0
+
+  
+  # ─── STATE MANAGEMENT ────────────────────────────────────────
+  provider: ^6.1.1
+
+  # ─── LOCAL STORAGE ───────────────────────────────────────────
+  shared_preferences: ^2.2.2
+
+  # ─── UTILITIES ───────────────────────────────────────────────
+  intl: ^0.18.1
+  uuid: ^4.3.3
+  http: ^1.2.1
+
+  # ─── CHARTS & PROGRESS ───────────────────────────────────────
+  fl_chart: ^0.66.2
+  percent_indicator: ^4.2.3
+
+  # ─── FONTS & ICONS ───────────────────────────────────────────
+  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.2
+
+  # ─── ANIMATIONS ──────────────────────────────────────────────
+  animate_do: ^3.3.4
+
+  # ─── FIREBASE ────────────────────────────────────────────────
+  # firebase_core    → the base package every Firebase product needs.
+  #                    It initialises the Firebase app using the
+  #                    config you get from flutterfire configure.
+  #
+  # firebase_auth    → handles login, signup, logout, password reset.
+  #                    Firebase keeps the user session alive across
+  #                    restarts automatically — no token storage needed.
+  #
+  # cloud_firestore  → the NoSQL database. Think of it as a giant
+  #                    nested JSON file in the cloud. You'll store
+  #                    each user's habits, medications, checkups here.
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  flutter_dotenv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  # NOTE: remove the assets block below if you don't have these
+  # folders in your project yet — missing folders crash the build.
+  assets:
+    - .env
+  #   - assets/images/
+  #   - assets/icons/
+
